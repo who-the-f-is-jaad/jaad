@@ -1,3 +1,10 @@
+@font-face {
+  font-family: 'RacingSansOne';
+  src: url('assets/Racing_Sans_One/RacingSansOne-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 /* reset */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -22,7 +29,12 @@ body.theme-mono {
   line-height: 1.7;
 }
 
-.theme-mono .top { margin-bottom: 52px; }
+.theme-mono .top {
+  font-family: 'RacingSansOne', 'Courier New', Courier, monospace;
+  font-size: 18px;
+  font-style: italic;
+  margin-bottom: 52px;
+}
 .theme-mono .block { margin-bottom: 48px; }
 .theme-mono .block-label { margin-bottom: 8px; }
 .theme-mono .line { display: flex; }
