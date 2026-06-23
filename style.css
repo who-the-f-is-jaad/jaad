@@ -1,0 +1,115 @@
+/* reset */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+/* base */
+body {
+  background: #ffffff;
+  color: #111;
+  min-height: 100vh;
+}
+
+.wrap {
+  max-width: 620px;
+  margin: 0;
+  padding: 52px 48px 80px;
+}
+
+/* ─── theme-mono (index) ─────────────────────────────────── */
+
+body.theme-mono {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+.theme-mono .top { margin-bottom: 52px; }
+.theme-mono .block { margin-bottom: 48px; }
+.theme-mono .block-label { margin-bottom: 8px; }
+.theme-mono .line { display: flex; }
+.theme-mono .line .d { min-width: 88px; flex-shrink: 0; margin-right: 24px; }
+.theme-mono .line .c a { color: #111; text-decoration: none; }
+.theme-mono .line .c a:hover { text-decoration: underline; }
+.theme-mono .foot { margin-top: 48px; }
+.theme-mono .foot a { color: #111; text-decoration: none; margin-right: 20px; }
+.theme-mono .foot a:hover { text-decoration: underline; }
+
+/* ─── theme-essay (long-form pages) ─────────────────────── */
+
+body.theme-serif {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+.theme-serif .back {
+  font-size: 13px;
+  color: #111;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 48px;
+}
+.theme-serif .back:hover { text-decoration: underline; }
+
+.theme-serif .eyebrow {
+  font-size: 11px;
+  letter-spacing: .1em;
+  color: #888;
+  margin-bottom: .75rem;
+}
+
+.theme-serif h1 {
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 1.7;
+  margin-bottom: .4rem;
+}
+
+.theme-serif .subtitle {
+  font-size: 11px;
+  color: #888;
+  margin-bottom: 0;
+  line-height: 1.5;
+}
+
+.theme-serif hr {
+  border: none;
+  border-top: 1px solid #e0e0e0;
+  margin: 1.5rem 0 1.75rem;
+}
+
+.theme-serif p { margin-bottom: 1.1rem; }
+.theme-serif p:last-child { margin-bottom: 0; }
+.theme-serif .section-block { margin-top: 2.25rem; }
+
+.theme-serif .sec-label {
+  font-size: 11px;
+  letter-spacing: .1em;
+  color: #888;
+  display: block;
+  margin-bottom: .35rem;
+}
+
+.theme-serif h2 {
+  font-size: 13px;
+  font-weight: normal;
+  color: #111;
+  margin-bottom: 1rem;
+  line-height: 1.7;
+}
+
+.theme-serif blockquote {
+  border-left: 1px solid #ccc;
+  padding: .1rem 0 .1rem 1.25rem;
+  margin: 1.75rem 0;
+  color: #444;
+}
+.theme-serif blockquote p { margin: 0; }
+
+.theme-serif .footer {
+  margin-top: 2.25rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid #e0e0e0;
+  font-size: 11px;
+  color: #888;
+  line-height: 1.6;
+}
