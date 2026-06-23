@@ -36,7 +36,7 @@ body.theme-mono {
   margin-bottom: 52px;
 }
 .theme-mono .block { margin-bottom: 48px; }
-.theme-mono .block-label { margin-bottom: 8px; font-weight: bold; }
+.theme-mono .block-label { margin-bottom: 8px; }
 .theme-mono .line { display: flex; }
 .theme-mono .line .d { min-width: 88px; flex-shrink: 0; margin-right: 24px; }
 .theme-mono .line .c a { color: #111; text-decoration: none; }
