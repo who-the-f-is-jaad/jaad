@@ -33,7 +33,7 @@ body.theme-mono {
   font-family: 'RacingSansOne', 'Courier New', Courier, monospace;
   font-size: 18px;
   font-style: italic;
-  margin-bottom: 52px;
+  margin-bottom: 4px;
 }
 .theme-mono .block { margin-bottom: 48px; }
 .theme-mono .block-label { margin-bottom: 8px; }
@@ -41,7 +41,7 @@ body.theme-mono {
 .theme-mono .line .d { min-width: 88px; flex-shrink: 0; margin-right: 24px; }
 .theme-mono .line .c a { color: #111; text-decoration: none; }
 .theme-mono .line .c a:hover { text-decoration: underline; }
-.theme-mono .foot { margin-top: 48px; }
+.theme-mono .foot { margin-top: 0; margin-bottom: 52px; }
 .theme-mono .foot a { color: #111; text-decoration: none; margin-right: 20px; }
 .theme-mono .foot a:hover { text-decoration: underline; }
 
