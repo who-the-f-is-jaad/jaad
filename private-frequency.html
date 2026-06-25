@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Private Frequency</title>
+  <link rel="stylesheet" href="/style.css" />
+
+  <style>
+    .picks {
+      margin-top: 2rem;
+    }
+
+    .pick {
+      display: grid;
+      grid-template-columns: 96px 1fr;
+      gap: 18px;
+      padding: 0 0 28px;
+      margin-bottom: 28px;
+      border-bottom: 1px solid #222;
+    }
+
+    .pick:last-child {
+      border-bottom: none;
+      margin-bottom: 0;
+    }
+
+    .pick-image {
+      width: 96px;
+      height: 96px;
+      object-fit: cover;
+      background:
+        linear-gradient(45deg, #111 25%, transparent 25%),
+        linear-gradient(-45deg, #111 25%, transparent 25%),
+        linear-gradient(45deg, transparent 75%, #111 75%),
+        linear-gradient(-45deg, transparent 75%, #111 75%);
+      background-size: 16px 16px;
+      background-position: 0 0, 0 8px, 8px -8px, -8px 0;
+      background-color: #1b1b1b;
+      border: 1px solid #222;
+      display: block;
+    }
+
+    .pick-kicker {
+      font-size: 10px;
+      letter-spacing: .15em;
+      text-transform: uppercase;
+      color: #555;
+      margin-bottom: .35rem;
+    }
+
+    .pick-title {
+      font-size: 13px;
+      font-weight: normal;
+      line-height: 1.5;
+      color: #fff;
+      margin-bottom: .2rem;
+    }
+
+    .pick-year {
+      font-size: 11px;
+      color: #444;
+      margin-bottom: .45rem;
+      line-height: 1.4;
+    }
+
+    .pick-tags {
+      font-size: 10px;
+      line-height: 1.5;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      color: #777;
+      margin-bottom: .75rem;
+    }
+
+    .pick-copy {
+      color: #fff;
+      margin-bottom: 0;
+    }
+
+    @media (max-width: 480px) {
+      .wrap {
+        padding: 32px 20px 64px;
+      }
+
+      .pick {
+        grid-template-columns: 72px 1fr;
+        gap: 14px;
+      }
+
+      .pick-image {
+        width: 72px;
+        height: 72px;
+      }
+    }
+  </style>
+</head>
+
+<body class="theme-serif">
+  <main class="wrap">
+    <a class="back" href="/">← back</a>
+
+    <div class="eyebrow">Secret</div>
+    <h1>Private Frequency</h1>
+    <p class="subtitle">
+      Draft NTS-style Pick of the Day selections, editorial copy tests and listening notes.
+    </p>
+
+    <hr />
+
+    <section class="picks" aria-label="Private Frequency selections">
+      <article class="pick">
+        <img
+          class="pick-image"
+          src="/assets/picks/midori-takada-through-the-looking-glass.jpg"
+          alt="Midori Takada, Through the Looking Glass album cover"
+        />
+        <div class="pick-content">
+          <div class="pick-kicker">Pick of the Day</div>
+          <h2 class="pick-title">Midori Takada, <em>Through the Looking Glass</em></h2>
+          <p class="pick-year">1983</p>
+          <p class="pick-tags">Ambient / Minimalism / Japan / Percussion</p>
+          <p class="pick-copy">
+            Not ambient as wallpaper. Ambient as architecture. Takada turns marimba, gongs and silence into a room that keeps changing shape. Patient, ceremonial, almost weightless.
+          </p>
+        </div>
+      </article>
+
+      <article class="pick">
+        <img
+          class="pick-image"
+          src="/assets/picks/hailu-mergia-and-the-walias-tche-belew.jpg"
+          alt="Hailu Mergia and The Walias, Tche Belew album cover"
+        />
+        <div class="pick-content">
+          <div class="pick-kicker">Pick of the Day</div>
+          <h2 class="pick-title">Hailu Mergia &amp; The Walias, <em>Tche Belew</em></h2>
+          <p class="pick-year">1977</p>
+          <p class="pick-tags">Ethio-Jazz / Funk / Addis Ababa / Organ</p>
+          <p class="pick-copy">
+            Addis organ music with its collar open. Hailu Mergia and The Walias move between Ethio-jazz, hotel-band funk and late-night swing like the room never has to close.
+          </p>
+        </div>
+      </article>
+
+      <article class="pick">
+        <img
+          class="pick-image"
+          src="/assets/picks/laraaji-ambient-3-day-of-radiance.jpg"
+          alt="Laraaji, Ambient 3: Day of Radiance album cover"
+        />
+        <div class="pick-content">
+          <div class="pick-kicker">Pick of the Day</div>
+          <h2 class="pick-title">Laraaji, <em>Ambient 3: Day of Radiance</em></h2>
+          <p class="pick-year">1980</p>
+          <p class="pick-tags">Ambient / New Age / Zither / Devotional</p>
+          <p class="pick-copy">
+            Before new age became a streaming mood, Laraaji made brightness feel physical. Zither, bells and long vibrations, produced by Eno but glowing entirely on their own frequency.
+          </p>
+        </div>
+      </article>
+
+      <article class="pick">
+        <img
+          class="pick-image"
+          src="/assets/picks/mulatu-astatke-mulatu-of-ethiopia.jpg"
+          alt="Mulatu Astatke, Mulatu of Ethiopia album cover"
+        />
+        <div class="pick-content">
+          <div class="pick-kicker">Pick of the Day</div>
+          <h2 class="pick-title">Mulatu Astatke, <em>Mulatu of Ethiopia</em></h2>
+          <p class="pick-year">1972</p>
+          <p class="pick-tags">Ethio-Jazz / Afro-Latin / Jazz / Addis Ababa</p>
+          <p class="pick-copy">
+            Not jazz with Ethiopian colour. Ethio-jazz as its own gravity. Mulatu folds vibraphone, Latin rhythm and Addis swing into music that walks slowly but never stands still.
+          </p>
+        </div>
+      </article>
+
+      <article class="pick">
+        <img
+          class="pick-image"
+          src="/assets/picks/konono-no-1-congotronics.jpg"
+          alt="Konono No.1, Congotronics album cover"
+        />
+        <div class="pick-content">
+          <div class="pick-kicker">Pick of the Day</div>
+          <h2 class="pick-title">Konono No.1, <em>Congotronics</em></h2>
+          <p class="pick-year">2005</p>
+          <p class="pick-tags">Congotronics / Likembé / Kinshasa / Distortion</p>
+          <p class="pick-copy">
+            Handmade amplification pushed into the red. Konono No.1 turn likembés, scrap-metal percussion and Kinshasa street voltage into trance music that sounds wired directly to the street.
+          </p>
+        </div>
+      </article>
+
+      <article class="pick">
+        <img
+          class="pick-image"
+          src="/assets/picks/dj-sprinkles-midtown-120-blues.jpg"
+          alt="DJ Sprinkles, Midtown 120 Blues album cover"
+        />
+        <div class="pick-content">
+          <div class="pick-kicker">Pick of the Day</div>
+          <h2 class="pick-title">DJ Sprinkles, <em>Midtown 120 Blues</em></h2>
+          <p class="pick-year">2008</p>
+          <p class="pick-tags">Deep House / Queer House / New York / Spoken Word</p>
+          <p class="pick-copy">
+            Deep house with the lights up and the politics left in. DJ Sprinkles returns the dancefloor to memory, grief and queer survival. Slow drums, soft keys, hard truths.
+          </p>
+        </div>
+      </article>
+
+      <article class="pick">
+        <img
+          class="pick-image"
+          src="/assets/picks/jan-jelinek-loop-finding-jazz-records.jpg"
+          alt="Jan Jelinek, Loop-Finding-Jazz-Records album cover"
+        />
+        <div class="pick-content">
+          <div class="pick-kicker">Pick of the Day</div>
+          <h2 class="pick-title">Jan Jelinek, <em>Loop-Finding-Jazz-Records</em></h2>
+          <p class="pick-year">2001</p>
+          <p class="pick-tags">Microhouse / Glitch / Jazz Samples / Minimal</p>
+          <p class="pick-copy">
+            Jazz reduced to dust, loop and surface noise. Jelinek makes a house record that barely moves, then lets every crackle and blur do the dancing.
+          </p>
+        </div>
+      </article>
+
+      <article class="pick">
+        <img
+          class="pick-image"
+          src="/assets/picks/huerco-s-for-those-of-you-who-have-never-and-also-those-who-have.jpg"
+          alt="Huerco S., For Those of You Who Have Never (And Also Those Who Have) album cover"
+        />
+        <div class="pick-content">
+          <div class="pick-kicker">Pick of the Day</div>
+          <h2 class="pick-title">Huerco S., <em>For Those of You Who Have Never (And Also Those Who Have)</em></h2>
+          <p class="pick-year">2016</p>
+          <p class="pick-tags">Ambient / Dub Techno / Lo-Fi / Drift</p>
+          <p class="pick-copy">
+            Club music after the club has disappeared. Huerco S. leaves only pads, low-end shadows and half-remembered motion. Soft, blurred, built for walking nowhere.
+          </p>
+        </div>
+      </article>
+
+      <article class="pick">
+        <img
+          class="pick-image"
+          src="/assets/picks/jlin-black-origami.jpg"
+          alt="Jlin, Black Origami album cover"
+        />
+        <div class="pick-content">
+          <div class="pick-kicker">Pick of the Day</div>
+          <h2 class="pick-title">Jlin, <em>Black Origami</em></h2>
+          <p class="pick-year">2017</p>
+          <p class="pick-tags">Footwork / Percussion / IDM / Rhythm Experiments</p>
+          <p class="pick-copy">
+            Footwork with no easy floor beneath it. Jlin folds percussion into impossible angles, all pressure, speed and negative space. Dance music as architecture under stress.
+          </p>
+        </div>
+      </article>
+
+      <article class="pick">
+        <img
+          class="pick-image"
+          src="/assets/picks/equiknoxx-bird-sound-power.jpg"
+          alt="Equiknoxx, Bird Sound Power album cover"
+        />
+        <div class="pick-content">
+          <div class="pick-kicker">Pick of the Day</div>
+          <h2 class="pick-title">Equiknoxx, <em>Bird Sound Power</em></h2>
+          <p class="pick-year">2016</p>
+          <p class="pick-tags">Dancehall / Jamaica / Electronic / Mutant Rhythms</p>
+          <p class="pick-copy">
+            Dancehall stripped for parts and rebuilt sideways. Equiknoxx leave space where the obvious drop should be, filling it with bird calls, bass logic and wrong-footed swing.
+          </p>
+        </div>
+      </article>
+
+      <article class="pick">
+        <img
+          class="pick-image"
+          src="/assets/picks/oren-ambarchi-hubris.jpg"
+          alt="Oren Ambarchi, Hubris album cover"
+        />
+        <div class="pick-content">
+          <div class="pick-kicker">Pick of the Day</div>
+          <h2 class="pick-title">Oren Ambarchi, <em>Hubris</em></h2>
+          <p class="pick-year">2016</p>
+          <p class="pick-tags">Experimental Rock / Krautrock / Minimal / Free Jazz</p>
+          <p class="pick-copy">
+            One riff, many bodies. Ambarchi stretches guitar minimalism into krautrock pulse, free-jazz pressure and motorik hypnosis. It feels simple until the whole machine starts breathing.
+          </p>
+        </div>
+      </article>
+
+      <article class="pick">
+        <img
+          class="pick-image"
+          src="/assets/picks/tirzah-devotion.jpg"
+          alt="Tirzah, Devotion album cover"
+        />
+        <div class="pick-content">
+          <div class="pick-kicker">Pick of the Day</div>
+          <h2 class="pick-title">Tirzah, <em>Devotion</em></h2>
+          <p class="pick-year">2018</p>
+          <p class="pick-tags">Alternative R&amp;B / Experimental Pop / UK / Intimate</p>
+          <p class="pick-copy">
+            Love songs with the polish rubbed off. Tirzah and Mica Levi leave space, ache and awkward silence in the mix. R&amp;B as private conversation, half-lit and close.
+          </p>
+        </div>
+      </article>
+    </section>
+
+    <footer class="footer">
+      Secret page. Internal editorial draft.
+    </footer>
+  </main>
+</body>
+</html>
