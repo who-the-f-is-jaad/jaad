@@ -7,17 +7,30 @@
   <link rel="stylesheet" href="style.css" />
 
   <style>
+    body.theme-serif {
+      background: #fff;
+      color: #000;
+    }
+
+    body.theme-serif .back { color: #aaa; }
+    body.theme-serif .back:hover { color: #000; }
+    body.theme-serif .eyebrow { color: #aaa; }
+    body.theme-serif h1 { color: #000; }
+    body.theme-serif .subtitle { color: #888; }
+    body.theme-serif hr { border-top-color: #e0e0e0; }
+    body.theme-serif .footer { border-top-color: #e0e0e0; color: #aaa; }
+
     .picks {
       margin-top: 2rem;
     }
 
     .pick {
       display: grid;
-      grid-template-columns: 96px 1fr;
-      gap: 18px;
-      padding: 0 0 28px;
-      margin-bottom: 28px;
-      border-bottom: 1px solid #222;
+      grid-template-columns: 200px 1fr;
+      gap: 24px;
+      padding: 0 0 36px;
+      margin-bottom: 36px;
+      border-bottom: 1px solid #e0e0e0;
     }
 
     .pick:last-child {
@@ -26,18 +39,10 @@
     }
 
     .pick-image {
-      width: 96px;
-      height: 96px;
+      width: 200px;
+      height: 200px;
       object-fit: cover;
-      background:
-        linear-gradient(45deg, #111 25%, transparent 25%),
-        linear-gradient(-45deg, #111 25%, transparent 25%),
-        linear-gradient(45deg, transparent 75%, #111 75%),
-        linear-gradient(-45deg, transparent 75%, #111 75%);
-      background-size: 16px 16px;
-      background-position: 0 0, 0 8px, 8px -8px, -8px 0;
-      background-color: #1b1b1b;
-      border: 1px solid #222;
+      background-color: #ddd;
       display: block;
     }
 
@@ -45,7 +50,7 @@
       font-size: 10px;
       letter-spacing: .15em;
       text-transform: uppercase;
-      color: #555;
+      color: #aaa;
       margin-bottom: .35rem;
     }
 
@@ -53,13 +58,13 @@
       font-size: 13px;
       font-weight: normal;
       line-height: 1.5;
-      color: #fff;
+      color: #000;
       margin-bottom: .2rem;
     }
 
     .pick-year {
       font-size: 11px;
-      color: #444;
+      color: #aaa;
       margin-bottom: .45rem;
       line-height: 1.4;
     }
@@ -69,28 +74,28 @@
       line-height: 1.5;
       letter-spacing: .08em;
       text-transform: uppercase;
-      color: #777;
+      color: #888;
       margin-bottom: .75rem;
     }
 
     .pick-copy {
-      color: #fff;
+      color: #000;
       margin-bottom: 0;
     }
 
-    @media (max-width: 480px) {
+    @media (max-width: 560px) {
       .wrap {
         padding: 32px 20px 64px;
       }
 
       .pick {
-        grid-template-columns: 72px 1fr;
-        gap: 14px;
+        grid-template-columns: 1fr;
       }
 
       .pick-image {
-        width: 72px;
-        height: 72px;
+        width: 100%;
+        height: auto;
+        aspect-ratio: 1;
       }
     }
   </style>
@@ -103,7 +108,7 @@
     <div class="eyebrow">Secret</div>
     <h1>Private Frequency</h1>
     <p class="subtitle">
-      Draft NTS-style Pick of the Day selections, editorial copy tests and listening notes.
+     Editorial copies, and album selections.
     </p>
 
     <hr />
