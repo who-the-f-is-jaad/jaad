@@ -7,18 +7,40 @@
   <link rel="stylesheet" href="style.css" />
 
   <style>
+    @font-face {
+      font-family: 'Univers';
+      src: url('assets/Fonts/UniversLTStd.otf') format('opentype');
+      font-weight: normal;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: 'Univers';
+      src: url('assets/Fonts/UniversLTStd-Bold.otf') format('opentype');
+      font-weight: bold;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: 'Univers';
+      src: url('assets/Fonts/UniversLTStd-Light.otf') format('opentype');
+      font-weight: 300;
+      font-style: normal;
+    }
+
     body.theme-serif {
       background: #fff;
       color: #000;
+      font-family: 'Univers', Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      line-height: 1.5;
     }
 
-    body.theme-serif .back { color: #aaa; }
+    body.theme-serif .back { color: #aaa; font-family: 'Univers', Helvetica, Arial, sans-serif; }
     body.theme-serif .back:hover { color: #000; }
-    body.theme-serif .eyebrow { color: #aaa; }
-    body.theme-serif h1 { color: #000; }
-    body.theme-serif .subtitle { color: #888; }
+    body.theme-serif .eyebrow { color: #aaa; font-family: 'Univers', Helvetica, Arial, sans-serif; }
+    body.theme-serif h1 { color: #000; font-family: 'Univers', Helvetica, Arial, sans-serif; font-size: 14px; }
+    body.theme-serif .subtitle { color: #888; font-family: 'Univers', Helvetica, Arial, sans-serif; }
     body.theme-serif hr { border-top-color: #e0e0e0; }
-    body.theme-serif .footer { border-top-color: #e0e0e0; color: #aaa; }
+    body.theme-serif .footer { border-top-color: #e0e0e0; color: #aaa; font-family: 'Univers', Helvetica, Arial, sans-serif; }
 
     .picks {
       margin-top: 2rem;
@@ -26,10 +48,10 @@
 
     .pick {
       display: grid;
-      grid-template-columns: 200px 1fr;
-      gap: 24px;
-      padding: 0 0 36px;
-      margin-bottom: 36px;
+      grid-template-columns: 280px 1fr;
+      gap: 28px;
+      padding: 0 0 40px;
+      margin-bottom: 40px;
       border-bottom: 1px solid #e0e0e0;
     }
 
@@ -39,8 +61,8 @@
     }
 
     .pick-image {
-      width: 200px;
-      height: 200px;
+      width: 280px;
+      height: 280px;
       object-fit: cover;
       background-color: #ddd;
       display: block;
@@ -51,39 +73,43 @@
       letter-spacing: .15em;
       text-transform: uppercase;
       color: #aaa;
-      margin-bottom: .35rem;
+      margin-bottom: .5rem;
     }
 
     .pick-title {
-      font-size: 13px;
+      font-size: 14px;
       font-weight: normal;
       line-height: 1.5;
       color: #000;
-      margin-bottom: .2rem;
+      margin-bottom: .25rem;
     }
 
     .pick-year {
-      font-size: 11px;
+      font-size: 12px;
       color: #aaa;
-      margin-bottom: .45rem;
+      margin-bottom: .6rem;
       line-height: 1.4;
     }
 
     .pick-tags {
+      display: inline-block;
       font-size: 10px;
-      line-height: 1.5;
       letter-spacing: .08em;
       text-transform: uppercase;
-      color: #888;
-      margin-bottom: .75rem;
+      background: #000;
+      color: #fff;
+      padding: 2px 6px;
+      margin-bottom: .9rem;
+      line-height: 1.6;
     }
 
     .pick-copy {
       color: #000;
       margin-bottom: 0;
+      line-height: 1.6;
     }
 
-    @media (max-width: 560px) {
+    @media (max-width: 640px) {
       .wrap {
         padding: 32px 20px 64px;
       }
